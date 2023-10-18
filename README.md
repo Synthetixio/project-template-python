@@ -4,20 +4,20 @@ A template for a Synthetix project using the [Python SDK](https://github.com/Syn
 
 ## Getting Started
 
-First, make sure you have the following:
+1. Make sure you can meet the following requirements:
 * A RPC endpoint like [Infura](https://infura.io/) or [Alchemy](https://www.alchemy.com/)
 * A wallet address **and** the private key for that address
 * Installed Python 3.8 or greater
     * Run `python --version` in your terminal to check
 
-Then, clone this repository to some location on your machine. For example:
+2. Clone this repository to some location on your machine. For example:
 
 ```bash
 git clone https://github.com/Synthetixio/project-template-python.git
 cd project-template-python
 ```
 
-Then, install the dependencies in a virual environment:
+3. Install the dependencies in a virual environment:
 
 ```bash
 python3 -m venv env
@@ -27,9 +27,9 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Then, copy the `.env.example` file to `.env` and fill in the values for your RPC and wallet.
+4. Copy the `.env.example` file to `.env` and fill in the values for your RPC and wallet.
 
-Finally, run the status script:
+5. Run the status script:
 
 ```bash
 python status.py

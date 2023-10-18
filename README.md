@@ -1,23 +1,23 @@
 # Sample Project
 
-A template for a Synthetix project using the [Python SDK](https://github.com/Synthetixio/python-sdk)
+This is a template to help you start a Synthetix project using the [Python SDK](https://github.com/Synthetixio/python-sdk).
 
 ## Getting Started
 
-1. Make sure you can meet the following requirements:
+1. Before you begin, ensure you have:
 * A RPC endpoint like [Infura](https://infura.io/) or [Alchemy](https://www.alchemy.com/)
 * A wallet address **and** the private key for that address
 * Installed Python 3.8 or greater
     * Run `python --version` in your terminal to check
 
-2. Clone this repository to some location on your machine. For example:
+2. Download this repository to a preferred location on your computer. Here's how:
 
 ```bash
 git clone https://github.com/Synthetixio/project-template-python.git
 cd project-template-python
 ```
 
-3. Install the dependencies in a virual environment:
+3. Set up the required packages in a virtual environment:
 
 ```bash
 python3 -m venv env
@@ -27,7 +27,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-4. Copy the `.env.example` file to `.env` and fill in the values for your RPC and wallet.
+4. Make a copy of the .env.example file, name it .env, and then enter the details for your RPC and wallet.
 
 5. Run the status script:
 
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 python status.py
 ```
 
-You should expect some result that shows some balances and market info, like this:
+You should see results displaying your balances and market information, as shown below:
 
 ```bash
 $ python status.py
@@ -60,7 +60,7 @@ If you've completed the steps above, you can run any of the scripts in the `scri
 python scripts/create_account.py
 ```
 
-These will not submit transactions unless you edit the script to set `submit=True`. This is a safety measure to prevent you from accidentally submitting transactions to the blockchain.
+By default, these scripts won't submit transactions. To enable this, you must edit the script and set submit=True. This precaution helps avoid unintended transactions on the blockchain.
 Always use caution and carefully review the code before submitting transactions.
 
 ## Documentation

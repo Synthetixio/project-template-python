@@ -29,6 +29,15 @@ pip install -r requirements.txt
 
 4. Make a copy of the .env.example file, name it .env, and then enter the details for your RPC and wallet.
 
+```
+PROVIDER_RPC=<An RPC endpoint>
+NETWORK_ID=<The network ID>
+ADDRESS=<Your address>
+PRIVATE_KEY=<Your private key (optional)>
+```
+
+The private key is optional. If one is not provided, the SDK will simulate the specified address, but transaction signing will be disabled.
+
 5. Run the status script:
 
 ```bash
@@ -60,7 +69,7 @@ If you've completed the steps above, you can run any of the scripts in the `scri
 python scripts/create_account.py
 ```
 
-By default, these scripts won't submit transactions. To enable this, you must edit the script and set submit=True. This precaution helps avoid unintended transactions on the blockchain.
+By default, these scripts won't submit transactions. To enable this, you must edit the script and set `submit=True`. This precaution helps avoid unintended transactions on the blockchain.
 Always use caution and carefully review the code before submitting transactions.
 
 ## Documentation

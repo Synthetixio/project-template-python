@@ -31,12 +31,10 @@ pip install -r requirements.txt
 
 ```
 PROVIDER_RPC=<An RPC endpoint>
-NETWORK_ID=<The network ID>
-ADDRESS=<Your address>
 PRIVATE_KEY=<Your private key (optional)>
 ```
 
-The private key is optional. If one is not provided, the SDK will simulate the specified address, but transaction signing will be disabled.
+The private key is optional. If one is not provided, the SDK can simulate a specified address, but transaction signing will be disabled.
 
 5. Run the status script:
 
